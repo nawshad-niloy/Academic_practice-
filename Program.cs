@@ -4,69 +4,90 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace First
+namespace User_Input
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //int a = 10;
+            //string myName = Console.ReadLine();
+            //Console.WriteLine("Hello, "+myName);
+            //Console.ReadLine();
+
+            //Console.WriteLine("Enter an Integer : ");
+            //int myInt = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(myInt);
+            //Console.ReadLine();
+
+            //Console.WriteLine("Enter a double : ");
+            //double myDbl = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine(myDbl);
+            //Console.ReadLine();
+
+            // Console.WriteLine("Enter a float : ");
+            // float myFlt = Convert.ToSingle(Console.ReadLine());
+            // Console.WriteLine(myFlt);
+            // Console.ReadLine();
+
+            //Console.Write("Enter a Character : ");
+            //char myChar = Convert.ToChar(Console.ReadLine());
+            //Console.WriteLine(myChar);
+            //Console.ReadLine();
+
+            // string name = Console.ReadLine();
+            //  Console.WriteLine("User name is : " + name);
+            //  Console.WriteLine("How many Candy You want : ");
+            //  int can = Convert.ToInt32(Console.ReadLine());
+            //  Console.WriteLine($"You will get {can} Candy ");
+
+            // int a = 4;
+            // int b = a;
+            // b += 4;
+            //b -= 4;
+            // b *= 4;
+            // b /= 4;
+            //  Console.WriteLine(b);
+
+            //Console.WriteLine(true && false);
+            //Console.WriteLine(false || false);
+
+            // math class is in system.
+            // int a = Math.Max(50,47);
+            //double a = Math.Sqrt(39);
             //Console.WriteLine(a);
-            //Console.WriteLine(sizeof(int));
-            //Console.ReadLine();
 
-            //string fname = "niloy ";
-            //string lname = "niloy ";
-            //string full = fname + lname;
-            //Console.WriteLine(full);
+            //String hello = "I am Niloy";
+            //Console.WriteLine(hello.Length);
+            //// for Uppercase string 
+            //Console.WriteLine(hello.ToUpper());
+            //Console.WriteLine(hello.ToLower());
 
-            //string c=Console.ReadLine();
-            // this readline return a string that i have printed with writeline 
-            //Console.WriteLine(c);
+            //String name = Console.ReadLine();
+            // String money = Console.ReadLine();
+            // Console.WriteLine($"Hello {name},Your balance is {money}");
+            //Console.WriteLine(name[3]);
+            // string nam = "Hello New COder";
+            // Console.WriteLine(nam.IndexOf("COder"));
+            // Console.WriteLine(nam.Substring(6));
 
-            // bool isNew = true;
-            // Console.WriteLine(isNew);
-            // Console.WriteLine(sizeof(bool));
-            // Console.ReadLine();
+            /* Console.WriteLine("Enter your Age :\n1.1-10\n2.10-20\n3.20-30");
 
-            //long myRoll = 2000L;
-            //Console.WriteLine(myRoll);
-            //Console.ReadLine();
+            int age =Convert.ToInt32(Console.ReadLine());
+            switch (age)
+            {
+                case 1: Console.WriteLine("You are toddler");
+                    break;
+                case 2: Console.WriteLine("You are Teenager");
+                    break;
+                case 3: Console.WriteLine("You are adult");
+                    break;
+                default: Console.WriteLine("Error!!!");
+                    break;
+            } */
 
-            // float myMoney = 2e4F;   //e indicates power over 10 on float & double.
-            // Console.WriteLine(myMoney);
-            // Console.ReadLine();
 
-            //double  myName = 20.12D;
-            //int myValue = (int)myName;
-            //Console.WriteLine(myValue);
-            //Console.ReadLine();
-
-            //Console.Write("Enter Username : ");
-            //string userName = Console.ReadLine();
-            //Console.WriteLine(userName);
-            //Console.ReadLine(); // it returns a string so any other var can't take input 
-
-            //Console.Write("Enter Your Age : ");
-            //int age = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine(age);
-            //Console.ReadLine();
-
-            // Console.Write("Enter Your Age : ");
-            // double age_1 = Convert.ToDouble(Console.ReadLine());
-            // Console.WriteLine(age_1);
-            // Console.ReadLine();
-
-           // Console.Write("Enter Your Age : ");
-           // float age = Convert.ToSingle(Console.ReadLine());
-           // Console.WriteLine(age);
-           // Console.ReadLine();
-           
-            Console.Write("Enter Your Character : ");
-            Char myChar = Console.ReadKey().KeyChar;
-            Console.ReadLine();
-            Console.WriteLine(myChar);
-            Console.ReadLine();
         }
+
+
     }
 }
