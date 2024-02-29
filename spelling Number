@@ -1,0 +1,63 @@
+using System;
+
+class NumberSpeller
+{
+    static string[] ones = {
+        "zero", "one", "two", "three", "four",
+        "five", "six", "seven", "eight", "nine"
+    };
+    static string[] teens = {
+        "ten", "eleven", "twelve", "thirteen", "fourteen",
+        "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"
+    };
+    static string[] tens = {
+        "", "", "twenty", "thirty", "forty",
+        "fifty", "sixty", "seventy", "eighty", "ninety"
+    };
+
+    static string SpellNumber(int number)
+    {
+        if (number < 10)
+        {
+            return ones[number];
+        }
+        else if (number < 20)
+        {
+            return teens[number - 10];
+        }
+        else if (number < 100)
+        {
+            return tens[number / 10] + (number % 10 != 0 ? " " + ones[number % 10] : "");
+        }
+        else if (number < 1000)
+        {
+            return ones[number / 100] + " hundred" + (number % 100 != 0 ? " and " + SpellNumber(number % 100) : "");
+        }
+        else if (number < 1000000)
+        {
+            return SpellNumber(number / 1000) + " thousand" + (number % 1000 != 0 ? " " + SpellNumber(number % 1000) : "");
+        }
+        else if (number < 1000000000)
+        {
+            return SpellNumber(number / 1000000) + " million" + (number % 1000000 != 0 ? " " + SpellNumber(number % 1000000) : "");
+        }
+        else
+        {
+            return "Number too large to spell.";
+        }
+    }
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a number:");
+        if (int.TryParse(Console.ReadLine(), out int number))
+        {
+            string spelledNumber = SpellNumber(number);
+            Console.WriteLine($"Spelled number: {spelledNumber}");
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number.");
+        }
+    }
+}
